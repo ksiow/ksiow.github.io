@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM Desa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/fh-3.4.0/r-2.5.0/datatables.min.js"></script>
+    <script src="/dist/js/tables.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/fh-3.4.0/datatables.min.css" >
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.8/b-2.4.2/b-html5-2.4.2/b-print-2.4.2/fh-3.4.0/r-2.5.0/datatables.min.css" >
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-[#E5EEDA] w-screen">
+<!-- Header start -->
+    <header class="bg-transparent bg-gradient-to-r from-[#a5be7d] via-[#4e764e] to-[#2b393b] absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div>
+                    <img class="py-2" src="/img/logoweb.png" alt="Logo DIGIDES" width="120px">
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 hamburger-button lg:hidden">
+                        <div class="hamburger-line ease-in-out duration-300 origin-top-left"></div>
+                        <div class="hamburger-line ease-in-out duration-300"></div>
+                        <div class="hamburger-line ease-in-out duration-300 origin-bottom-left"></div>
+                    </button>
+                    
+                    <nav id="nav-menu" class="hidden absolute py-2 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-2 top-full 
+                    lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex snap-y">
+                            <li class="group">
+                                <a href="#ranking" class=" mx-6 flex text-base py-2 group-hover:border-b-[#a5be7d] group-hover:border-solid group-hover:border-b-4 -mb-2 lg:text-white">Ranking Desa</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Header end -->
+
+
+<!-- tab section start -->
+<section id="ranking" class="mt-20 mb-10">
+    <div class=" text-center flex flex-col items-center">
+      <span class="font-semibold text-green-900 text-2xl">Data IDM</span>  
+    </div>
+    
+    <div class="max-w-3xl mt-5 mx-auto px-8 sm:px-0">
+        <div class="sm:w-7/12 sm:mx-auto">
+            <div role="tablist" aria-label="tabs" class="container relative min-w-min mx-auto h-11 grid grid-cols-4 items-center px-[3px] rounded-full bg-green-900/20 overflow-hidden shadow-2xl shadow-900/20 transition">
+                <div class="absolute indicator h-10 m-auto top-0 left-0 bottom-0 w-32 hue-rotate-90 rounded-full bg-white"></div>
+                <button role="tab" id="tab-1" tabindex="0" aria-controls="panel-1" aria-selected="true" class="block relative h-10 px-2 tab rounded-full">
+                    <span class="text-slate-800 hover:text-green-900 hover:font-semibold transition duration-700">Provinsi</span>
+                </button>
+                <button role="tab" id="tab-2" tabindex="-1" aria-controls="panel-2" aria-selected="false" class="block relative h-10 px-2 tab rounded-full">
+                    <span class="text-slate-800 hover:text-green-900 hover:font-semibold transition duration-700">Kab/Kota</span>
+                </button>
+                <button role="tab" id="tab-3" tabindex="-1" aria-controls="panel-3" aria-selected="false" class="block relative h-10 px-2 tab rounded-full">
+                    <span class="text-slate-800 hover:text-green-900 hover:font-semibold transition duration-700">Kecamatan</span>
+                </button>
+                <button role="tab" id="tab-4" tabindex="-2" aria-controls="panel-4" aria-selected="false" class="block relative h-10 px-2 tab rounded-full">
+                    <span class="text-slate-800 hover:text-green-900 hover:font-semibold transition duration-700">Desa</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--Table section-->
+        <div class="relative mt-6 rounded-3xl select-none">
+            <div id="panel-1" role="tabpanel" class="tab-panel p-6 transition duration-300">
+                <div id="tab-container" class="container mx-auto">
+                    <div id="tab-provinsi">
+                        <table id="datatables-provinsi" class="display mx-auto text-[#253528] ">
+                            <thead class="text-center">
+                                <tr>
+                                    <th class="bg-[#253528] text-white">ID</th>
+                                    <th class="bg-[#253528] text-white">Provinsi</th>
+                                    <th class="bg-[#253528] text-white">2023</th>
+                                    <th class="bg-[#253528] text-white">2022</th>
+                                    <th class="bg-[#253528] text-white">Status</th>
+                                    <th class="bg-[#253528] text-white">Rank</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="panel-2" role="tabpanel" class="tab-panel w-full absolute top-0 invisible opacity-0 p-6 transition duration-300">
+                <div id="tab-container" class="container">
+                  <div id="tab-kabupaten">
+                    <table id="datatables-kabupaten" class="display border-green-950 text-green-900 w-full truncate hover:text-clip">
+                      <thead class="text-center">
+                        <tr>
+                            <th class="bg-[#49654e] text-white">ID</th>
+                            <th class="bg-[#49654e] text-white">Provinsi</th>
+                            <th class="bg-[#49654e] text-white">Kabupaten</th>
+                            <th class="bg-[#49654e] text-white">2023</th>
+                            <th class="bg-[#49654e] text-white">2022</th>
+                            <th class="bg-[#49654e] text-white">Status</th>
+                            <th class="bg-[#49654e] text-white">Rank</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              
+            <div id="panel-3" role="tabpanel" class="tab-panel w-full absolute top-0 invisible opacity-0  p-6 transition duration-300">
+                <div id="tab-container" class="container mx-auto">
+                    <th class="bg-[#8ba888] text-white">Provinsi</th>
+                    <div id="tab-kecamatan">
+                        <table id="datatables-kecamatan" class="display text-green-900">
+                            <thead class="text-center">
+                                <tr>
+                                    <th class="bg-[#8ba888] text-white">ID</th>
+                                    <th class="bg-[#8ba888] text-white">Kecamatan</th>
+                                    <th class="bg-[#8ba888] text-white">2023</th>
+                                    <th class="bg-[#8ba888] text-white">Status</th>
+                                    <th class="bg-[#8ba888] text-white">Rank</th>
+                                    <th class="bg-[#8ba888] text-white">Kabupaten</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="panel-4" role="tabpanel" class="tab-panel w-full absolute top-0 invisible opacity-0  p-6 transition duration-300">
+                <div id="tab-container" class="container mx-auto">
+                    <div id="tab-desa">
+                        <table id="datatables-desa" class="display text-green-900">
+                            <thead class="text-center">
+                                <tr>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">ID</th>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">Provinsi</th>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">Desa</th>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">2023</th>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">2022</th>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">Status</th>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">Rank</th>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">Kabupaten</th>
+                                    <th class="bg-[#c0cfb2] text-[#49654e]">Kecamatan</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- tab section end -->
+
+
+
+    
+<script  src="/dist/js/main.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</body>
+</html>
