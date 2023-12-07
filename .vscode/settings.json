@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.json": "jsonc",
+    "desa.json": "json"
+  },
+  "editor.stopRenderingLineAfter": 200,
+  "liveServer.settings.port": 5504
+}

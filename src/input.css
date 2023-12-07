@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger-button {
+    @apply bg-transparent border-none cursor-pointer p-0;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] bg-green-50 my-1 transition duration-300;
+}
+
+.hamburger-button.active .hamburger-line:nth-child(1) {
+    @apply transform rotate-45 -translate-y-1;
+}
+
+.hamburger-button.active .hamburger-line:nth-child(2) {
+    @apply opacity-0 scale-0;
+}
+
+.hamburger-button.active .hamburger-line:nth-child(3) {
+    @apply transform -rotate-45 translate-y-1;
+}
+
+
+.navbar-fixed{
+    @apply fixed z-[9999] backdrop-blur-md bg-gradient-to-r from-[#a5be7d] via-[#4e764e] to-[#2b393b] opacity-90 backdrop:blur-lg;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.indicator{
+    transition:left .4s;
+}
+

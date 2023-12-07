@@ -1,0 +1,312 @@
+{
+    "data": [
+        {
+            "rank": "24",
+            "id": "11",
+            "provinsi": "Aceh",
+            "skor_2023": "0.6709",
+            "skor_2022": "0.6483",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "29",
+            "id": "12",
+            "provinsi": "Sumatera Utara",
+            "skor_2023": "0.6256",
+            "skor_2022": "0.6155",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "10",
+            "id": "13",
+            "provinsi": "Sumatera Barat",
+            "skor_2023": "0.7514",
+            "skor_2022": "0.7402",
+            "status": "Maju"
+        },
+        {
+            "rank": "7",
+            "id": "14",
+            "provinsi": "Riau",
+            "skor_2023": "0.7707",
+            "skor_2022": "0.7012",
+            "status": "Maju"
+        },
+        {
+            "rank": "15",
+            "id": "15",
+            "provinsi": "Jambi",
+            "skor_2023": "0.7293",
+            "skor_2022": "0.7089",
+            "status": "Maju"
+        },
+        {
+            "rank": "22",
+            "id": "16",
+            "provinsi": "Sumatera Selatan",
+            "skor_2023": "0.6894",
+            "skor_2022": "0.6680",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "21",
+            "id": "17",
+            "provinsi": "Bengkulu",
+            "skor_2023": "0.6935",
+            "skor_2022": "0.6748",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "17",
+            "id": "18",
+            "provinsi": "Lampung",
+            "skor_2023": "0.7184",
+            "skor_2022": "0.7018",
+            "status": "Maju"
+        },
+        {
+            "rank": "3",
+            "id": "19",
+            "provinsi": "Kepulauan Bangka Belitung",
+            "skor_2023": "0.7878",
+            "skor_2022": "0.7362",
+            "status": "Maju"
+        },
+        {
+            "rank": "18",
+            "id": "21",
+            "provinsi": "Kepulauan Riau",
+            "skor_2023": "0.7101",
+            "skor_2022": "0.6914",
+            "status": "Maju"
+        },
+        {
+            "rank": "-",
+            "id": "31",
+            "provinsi": "DKI Jakarta",
+            "skor_2023": "-",
+            "skor_2022": "-",
+            "status": "-"
+        },
+        {
+            "rank": "5",
+            "id": "32",
+            "provinsi": "Jawa Barat",
+            "skor_2023": "0.7798",
+            "skor_2022": "0.7529",
+            "status": "Maju"
+        },
+        {
+            "rank": "14",
+            "id": "33",
+            "provinsi": "Jawa Tengah",
+            "skor_2023": "0.7300",
+            "skor_2022": "0.7118",
+            "status": "Maju"
+        },
+        {
+            "rank": "2",
+            "id": "34",
+            "provinsi": "Daerah Istimewa Yogyakarta",
+            "skor_2023": "0.8322",
+            "skor_2022": "0.8128",
+            "status": "Mandiri"
+        },
+        {
+            "rank": "4",
+            "id": "35",
+            "provinsi": "Jawa Timur",
+            "skor_2023": "0.7807",
+            "skor_2022": "0.7517",
+            "status": "Maju"
+        },
+        {
+            "rank": "23",
+            "id": "36",
+            "provinsi": "Banten",
+            "skor_2023": "0.6803",
+            "skor_2022": "0.6626",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "1",
+            "id": "51",
+            "provinsi": "Bali",
+            "skor_2023": "0.8550",
+            "skor_2022": "0.8269",
+            "status": "Mandiri"
+        },
+        {
+            "rank": "8",
+            "id": "52",
+            "provinsi": "Nusa Tenggara Barat",
+            "skor_2023": "0.7593",
+            "skor_2022": "0.7339",
+            "status": "Maju"
+        },
+        {
+            "rank": "30",
+            "id": "53",
+            "provinsi": "Nusa Tenggara Timur",
+            "skor_2023": "0.6210",
+            "skor_2022": "0.6104",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "6",
+            "id": "61",
+            "provinsi": "Kalimantan Barat",
+            "skor_2023": "0.7709",
+            "skor_2022": "0.7382",
+            "status": "Maju"
+        },
+        {
+            "rank": "19",
+            "id": "62",
+            "provinsi": "Kalimantan Tengah",
+            "skor_2023": "0.7043",
+            "skor_2022": "0.6782",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "12",
+            "id": "63",
+            "provinsi": "Kalimantan Selatan",
+            "skor_2023": "0.7480",
+            "skor_2022": "0.7107",
+            "status": "Maju"
+        },
+        {
+            "rank": "9",
+            "id": "64",
+            "provinsi": "Kalimantan Timur",
+            "skor_2023": "0.7526",
+            "skor_2022": "0.7344",
+            "status": "Maju"
+        },
+        {
+            "rank": "25",
+            "id": "65",
+            "provinsi": "Kalimantan Utara",
+            "skor_2023": "0.6704",
+            "skor_2022": "0.6521",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "11",
+            "id": "71",
+            "provinsi": "Sulawesi Utara",
+            "skor_2023": "0.7503",
+            "skor_2022": "0.7194",
+            "status": "Maju"
+        },
+        {
+            "rank": "20",
+            "id": "72",
+            "provinsi": "Sulawesi Tengah",
+            "skor_2023": "0.6978",
+            "skor_2022": "0.6705",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "16",
+            "id": "73",
+            "provinsi": "Sulawesi Selatan",
+            "skor_2023": "0.7286",
+            "skor_2022": "0.7019",
+            "status": "Maju"
+        },
+        {
+            "rank": "27",
+            "id": "74",
+            "provinsi": "Sulawesi Tenggara",
+            "skor_2023": "0.6673",
+            "skor_2022": "0.6465",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "13",
+            "id": "75",
+            "provinsi": "Gorontalo",
+            "skor_2023": "0.7317",
+            "skor_2022": "0.7068",
+            "status": "Maju"
+        },
+        {
+            "rank": "28",
+            "id": "76",
+            "provinsi": "Sulawesi Barat",
+            "skor_2023": "0.6535",
+            "skor_2022": "0.6309",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "26",
+            "id": "81",
+            "provinsi": "Maluku",
+            "skor_2023": "0.6674",
+            "skor_2022": "0.6526",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "31",
+            "id": "82",
+            "provinsi": "Maluku Utara",
+            "skor_2023": "0.6053",
+            "skor_2022": "0.5924",
+            "status": "Berkembang"
+        },
+        {
+            "rank": "32",
+            "id": "91",
+            "provinsi": "Papua",
+            "skor_2023": "0.5747",
+            "skor_2022": "0.4676",
+            "status": "Tertinggal"
+        },
+        {
+            "rank": "33",
+            "id": "92",
+            "provinsi": "Papua Barat",
+            "skor_2023": "0.5196",
+            "skor_2022": "0.5184",
+            "status": "Tertinggal"
+        },
+        {
+            "rank": "-",
+            "id": "92",
+            "provinsi": "Papua Barat Daya",
+            "skor_2023": "-",
+            "skor_2022": "-",
+            "status": "-"
+        },
+        {
+            "rank": "34",
+            "id": "93",
+            "provinsi": "Papua Selatan",
+            "skor_2023": "0.4770",
+            "skor_2022": "-",
+            "status": "Sangat Tertinggal"
+        },
+        {
+            "rank": "35",
+            "id": "94",
+            "provinsi": "Papua Tengah",
+            "skor_2023": "0.4601",
+            "skor_2022": "-",
+            "status": "Sangat Tertinggal"
+        },
+        {
+            "rank": "36",
+            "id": "95",
+            "provinsi": "Papua Pegunungan",
+            "skor_2023": "0.4312",
+            "skor_2022": "-",
+            "status": "Sangat Tertinggal"
+        }
+    ],
+    "meta": {
+        "administrative_area_level": 1,
+        "updated_at": "2023-08-15T03:36:18+00:00"
+    }
+}
